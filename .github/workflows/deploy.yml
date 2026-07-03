@@ -31,12 +31,8 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
  
           script: |
-
-            echo "Connected Successfully"
-
-            whoami
-
-            pwd
-
-            ls -la 
+              cd /root/deploymentcheck
+              git pull origin main
+              pwd
+              ls -la
  
